@@ -1,0 +1,53 @@
+.content1{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:50px;
+    position: relative;
+
+    &__title{
+        text-align: center;
+        margin-top:94px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        letter-spacing: 0.03em;    
+        color: getColor('primaryBlack');
+    }
+
+    &__pictures{
+        margin-top: 55px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__description{
+        width: 374px;
+        height: 324px;
+    }
+
+    &__text{
+        width: 373px;
+        height: 70px;
+        background: rgba(47, 48, 58, 0.8);
+        position:absolute;
+        margin-top: 255px;
+    }
+
+    &__message{
+        font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color:getColor('primaryWhite');
+    margin-top: 30px;
+    }
+}
