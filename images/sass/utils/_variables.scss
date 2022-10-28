@@ -1,0 +1,23 @@
+$colors: (
+  'primaryWhite': #fff,
+  'secondWhite': #F5F4FA,
+  'primaryGrey': #757575,
+  'secondGrey': #afb1b8,
+  'primaryBlue': #2196F3,
+  'primaryBlack':#212121,
+  'secondBlack':#2f303a,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
+
+$fonts:(
+    'primaryFont': 'Roboto',
+    'secondFont': 'Raleway',
+    'style': normal,
+);
+
+@function getFonts($font) {
+    @return map-get($fonts, $font);
+}
