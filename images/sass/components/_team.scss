@@ -134,6 +134,7 @@
             background-color: getColor('primaryWhite');
             box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
             border-radius: 0px 0px 4px 4px;
+            height:auto;
         }
     
         &__photo{
@@ -173,7 +174,6 @@
             height: 44px;
             margin-left: auto;
             margin-right: auto;
-            margin-bottom: 10px;
             display: flex;
             justify-content: space-between;
         }
@@ -182,6 +182,7 @@
             width: 44px;
             height: 44px;
             border-radius:50%;
+            margin-bottom: 20px;
             cursor:pointer;
             transition: 250ms all cubic-bezier(0.4,0,0.2,1);
             &--active:hover{
