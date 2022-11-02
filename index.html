@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="sass/main2.css">
     <link rel="stylesheet" href="css/modern-normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
@@ -22,17 +22,23 @@
         </ul>
     </nav>
     <ul class="data">
+        <div class="data__flex">
         <svg class="data__header-icons data__header-icons--active" width="16" height="12">
             <use href="./images/svg/icons.svg#header-mail"></use>
         </svg>
         <li class="data__link"><a href="#" mailto:info@devstudio.com  id="correo" class="data__linkage data__linkage--active">info@devstudio.com</a></li>
+        </div>
+        <div class="data__flex">
         <svg class="data__header-icons data__header-icons--active" width="16" height="15">
             <use href="./images/svg/icons.svg#header-phone"></use>
         </svg>
         <li class="data__link"><a href="#" tel:+575555296000 class="data__linkage data__linkage--active">+575555296000</a></li>
+        </div>
     </ul>
-    <div class="data__menu-container">
-        <img class="data__menu" src="" alt="menu hamburguesa">
+    <div class="data__menu">
+        <svg width="20" height="20">
+            <use href="./images/svg/icons.svg#menu_hamburguesa"></use>
+        </svg>
     </div>
     </div>
     </header>
@@ -104,7 +110,7 @@
             <article class="content__article">
                 
                 
-                <svg width="270" height="120">
+                <svg class="content__svg" width="270" height="120">
                     <use href="./images/svg/icons.svg#section-antena"></use>
                 </svg>
                 
@@ -116,7 +122,7 @@
                 </p>
             </article>
             <article class="content__article">
-                <svg width="270" height="120">
+                <svg class="content__svg" width="270" height="120">
                     <use href="./images/svg/icons.svg#section-reloj"></use>
                 </svg>
                 <h2 class="content__title">PUNTUALIDAD</h2>
@@ -127,7 +133,7 @@
                 </p>
             </article>
             <article class="content__article">
-                <svg width="270" height="120">
+                <svg class="content__svg" width="270" height="120">
                     <use href="./images/svg/icons.svg#section-ordenador"></use>
                 </svg>
                 <h2 class="content__title">PLANIFICACIÓN</h2>
@@ -138,7 +144,7 @@
                 </p>
             </article>
             <article class="content__article">
-                <svg width="270" height="120">
+                <svg class="content__svg" width="270" height="120">
                     <use href="./images/svg/icons.svg#section-astronauta"></use>
                     </svg>
                 <h2 class="content__title">TEGNOLOGÍA MODERNA</h2>

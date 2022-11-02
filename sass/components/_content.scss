@@ -40,18 +40,24 @@
 @media  screen and (min-width: 480px) and (max-width: 767px){
     .content{
         width: 480px;
-        height: 122px;
-        margin-top: 60px;
+        height: auto;
+        margin-top: 30px;
         display: block;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 200px;
+        margin-bottom: 0px;
+
     
         &__article{
-            margin-right: auto;
-            margin-left: auto;
+            background-color: aqua;
+            margin:5px;
         }
-    
+        
+        &__svg{
+            width: 100%;
+            height:auto;
+            padding: 5px;
+        }
         &__paragraph{
             font-family: 'Roboto';
             font-style: normal;
@@ -65,14 +71,16 @@
     
         &__title{
             margin-bottom: 10px;
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 16px;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color:getColor('primaryBlack');
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color:getColor('primaryBlack');
+            text-align: center;
+            margin-top: 5px;
         }
     }    
 }
@@ -80,24 +88,29 @@
 @media  screen and (min-width:768px) and (max-width:1199px){
     .content{
         width: 768px;
-        height: 600px;
-        margin-top: 60px;
+        height: auto;
+        margin-top: 30px;
         display: flex;
-        margin-left: auto;
-        margin-right: auto;
+        flex-wrap:wrap;
         margin-bottom: 60px;
+        
+        &__svg{
+            width:250px;
+        }
     
         &__article{
-            margin-right: 10px;
-            margin-left: 18px;
+            width:250px;
+            height: auto;
+           
         }
     
         &__paragraph{
+            width:250px;
             font-family: 'Roboto';
             font-style: normal;
             font-weight: 400;
-            font-size: 14px;
-            line-height: 24px;
+            font-size: 10px;
+            line-height: 14px;
             letter-spacing: 0.03em;
             color:getColor('primaryGrey');
             text-align: justify;
@@ -108,8 +121,8 @@
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 700;
-        font-size: 14px;
-        line-height: 16px;
+        font-size: 10px;
+        line-height: 14px;
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color:getColor('primaryBlack');
