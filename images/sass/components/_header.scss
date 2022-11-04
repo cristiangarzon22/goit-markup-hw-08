@@ -1,0 +1,294 @@
+.header{
+    background-color: getColor('primaryWhite'); 
+}
+
+.navigation{
+    display: flex;
+    width: 1200px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    margin-left: 40px;
+    margin-right: 93px;
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: getColor('primaryBlue');
+}
+
+.navigation-list{
+    display: flex;
+
+    &__link{
+    list-style: none;
+    margin-right: 50px;
+
+    &:last-child{
+        margin-right: 0px;
+    }
+    }
+
+    &__linkage{
+        text-decoration: none;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+        color: getColor('primaryBlack');
+        position: relative;
+        background-color: getColor('primaryWhite');
+        border:none;
+        cursor: pointer;
+        transition: 250ms all cubic-bezier(0.4,0,0.2,1);
+
+        &::before{
+            content: " ";
+            height: 3px;
+            width: 0px;
+            background-color: getColor('primaryBlue');
+            position: absolute;
+            left: 0px;
+            bottom:-30px;
+            transition: 0.4s ease-out;
+
+        }
+        &--active:hover{
+            color: getColor('primaryBlue');
+
+            &::before{
+                width: 100%;
+            }
+        }
+    }
+}
+
+.data{
+       
+    display: flex;
+
+    &__link{
+        list-style: none;
+        margin-right: 40px;
+    }
+
+    &__flex{
+        display: flex;
+    }
+
+    &__linkage{
+        text-decoration: none;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+        color: getColor('primaryGrey');
+        transition: 250ms all cubic-bezier(0.4,0,0.2,1);
+
+        &--active:hover{
+            color:getColor('primaryBlue');
+        }
+    }
+
+    &__header-icons{
+        margin-right: 10px;
+        margin-top: 3px;
+        fill:getColor('primaryGrey');
+        cursor:pointer;
+        transition: 250ms all cubic-bezier(0.4,0,0.2,1);
+
+        &--active:hover{
+            fill: getColor('primaryBlue');
+        }
+    }
+
+    &__menu{
+        display:none;
+    }
+
+}
+
+@media  screen and (min-width: 480px) and (max-width: 767px)  {
+    
+    .header{
+        background-color: getColor('primaryWhite'); 
+    }
+    
+    .navigation{
+        width: 480px;
+        height: auto;
+        display: flex;
+    }
+    
+    .logo{
+        margin-left: 15px;
+        margin-top: 16px;
+        margin-bottom: 15px;
+        text-decoration: none;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 28px;
+        letter-spacing: 0.03em;
+        color: getColor('primaryBlue');
+    }
+    
+    .navigation-list{
+     display:none; 
+    }
+    
+    .data{
+     display:none;
+
+     &__menu{
+        margin-right: 10px;
+        margin-top: 10px;
+        justify-content: flex-end;
+        display:block;
+     }
+    }
+
+
+}
+
+@media  screen and (min-width:768px) and (max-width: 1199px){
+    .header{
+        background-color: getColor('primaryWhite'); 
+    }
+    
+    .navigation{
+        display: flex;
+        width: 768px;
+        height: 80px;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .logo{
+        margin-left: 15px;
+        align-self: center;
+        text-decoration: none;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 31px;
+        letter-spacing: 0.03em;
+        color: getColor('primaryBlue');
+    }
+    
+    .navigation-list{
+        display: flex;
+        margin-right: 170px;
+    
+        &__link{
+        list-style: none;
+        margin-right: 20px;
+    
+        &:last-child{
+            margin-right: 0px;
+        }
+        }
+        
+
+
+        &__linkage{
+            text-decoration: none;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.02em;
+            color: getColor('primaryBlack');
+            position: relative;
+            background-color: getColor('primaryWhite');
+            border:none;
+            cursor: pointer;
+            transition: 250ms all cubic-bezier(0.4,0,0.2,1);
+    
+            &::before{
+                content: " ";
+                height: 3px;
+                width: 0px;
+                background-color: getColor('primaryBlue');
+                position: absolute;
+                left: 0px;
+                bottom:-30px;
+                transition: 0.4s ease-out;
+    
+            }
+            &--active:hover{
+                color: getColor('primaryBlue');
+    
+                &::before{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .data{
+        display:block;
+    
+        &__link{
+            list-style: none;
+            margin-right: 40px;
+            display:flex;
+        }
+    
+        &__linkage{
+            text-decoration: none;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.02em;
+            color: getColor('primaryGrey');
+            transition: 250ms all cubic-bezier(0.4,0,0.2,1);
+            margin-bottom:2px;
+            &--active:hover{
+                color:getColor('primaryBlue');
+            }
+        }
+        
+        &__flex{
+            display:flex;
+            margin-right: 30px;
+        }
+        &__header-icons{
+            margin-right: 10px;
+            margin-top: 3px;
+            fill:getColor('primaryGrey');
+            cursor:pointer;
+            transition: 250ms all cubic-bezier(0.4,0,0.2,1);
+    
+            &--active:hover{
+                fill: getColor('primaryBlue');
+            }
+        }
+
+        &__menu{
+            display:none;
+        }
+    
+    }
+
+
+}
