@@ -67,10 +67,10 @@
 
     &__social-network{
         width: 206px;
-        height: 44px;
+        height: 50px;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 30px;
+        
         display: flex;
         justify-content: space-between;
     }
@@ -81,7 +81,7 @@
         border-radius:50%;
         cursor:pointer;
         transition: 250ms all cubic-bezier(0.4,0,0.2,1);
-
+        
         &--active:hover{
             background-color:getColor('primaryBlue');
         }
@@ -104,8 +104,7 @@
 @media  screen and (min-width: 480px) and (max-width: 767px) {
     .team{
         background:getColor('secondWhite');
-        margin-top:0px;
-        padding-bottom: 90px;
+       
     
         &__title{
             padding-top: 30px;
@@ -127,6 +126,7 @@
             margin-right: auto;
             margin-top:20px;
             position: relative;
+            margin-bottom: 0px;
         }
     
         &__member{
@@ -134,7 +134,7 @@
             background-color: getColor('primaryWhite');
             box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
             border-radius: 0px 0px 4px 4px;
-            height:auto;
+            height:600px;
         }
     
         &__photo{
@@ -158,7 +158,7 @@
         &__profession{
             padding-top: 10px;
             text-align: center;
-            padding-bottom: 30px;
+            padding-bottom: 10px;
             font-family: 'Roboto';
             font-style: normal;
             font-weight: 400;
@@ -176,13 +176,14 @@
             margin-right: auto;
             display: flex;
             justify-content: space-between;
+            padding-bottom: 40px;
         }
     
         &__networks{
             width: 44px;
             height: 44px;
             border-radius:50%;
-            margin-bottom: 20px;
+            margin-top: 0px;
             cursor:pointer;
             transition: 250ms all cubic-bezier(0.4,0,0.2,1);
             &--active:hover{
@@ -209,6 +210,7 @@
         background:getColor('secondWhite');
         margin-top:60px;
         padding-bottom: 60px;
+        width: 768px;
     
         &__title{
             padding-top: 10px;
@@ -224,10 +226,10 @@
         }
     
         &__members{
-            display: flex;
-            justify-content: space-between;
-            width:768px;
-            height:1285px;
+            display:flex;
+            flex-wrap: wrap;
+            width: 768px;
+            height:auto;
             margin-left: auto;
             margin-right: auto;
             margin-top:50px;
@@ -239,10 +241,11 @@
             background-color: getColor('primaryWhite');
             box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
             border-radius: 0px 0px 4px 4px;
+            width: 350px;
         }
     
         &__photo{
-            width:354px;
+            width:350px;
             height:374px;
         }
     

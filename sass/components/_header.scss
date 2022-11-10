@@ -157,7 +157,6 @@
         margin-right: 10px;
         margin-top: 10px;
         justify-content: flex-end;
-        visibility:visible;
         display:block;
      }
     }
@@ -195,7 +194,7 @@
     
     .navigation-list{
         display: flex;
-        margin-right: 170px;
+        margin-right: 100px;
     
         &__link{
         list-style: none;
@@ -246,10 +245,9 @@
 
     .data{
         display:block;
-    
+        
         &__link{
             list-style: none;
-            margin-right: 40px;
             display:flex;
         }
     
@@ -263,7 +261,7 @@
             letter-spacing: 0.02em;
             color: getColor('primaryGrey');
             transition: 250ms all cubic-bezier(0.4,0,0.2,1);
-            margin-bottom:2px;
+            margin-bottom:6px;
             &--active:hover{
                 color:getColor('primaryBlue');
             }

@@ -147,32 +147,30 @@
         min-width:768px;
         height: 401px;
         background-image: url(../images/Imagen\ \(36\).png);
-        background-size: 768px , 401px;
+        background-size: 768px 401px;
         
         &__poster{
             max-width:1199px;
             min-width:768px;
             height: auto;
             z-index: 1;
-            background-color: rebeccapurple;
-            display:flex;
-            justify-content:center;
-            
         }
     
         &__title{
+            margin-top: 50px;
             width: 500px;
             height:auto;
             color: getColor('primaryWhite');
             font-family: 'Roboto';
             font-style: normal;
             font-weight: 900;
-            font-size: 18px;
-            line-height: 22px;
+            font-size: 28px;
+            line-height: 38px;
             letter-spacing: 0.06em;
             text-transform: uppercase;
             z-index: 1;
-           
+            margin-left: 17%;
+            padding-bottom: 23px;
         }
     
         &__button{
